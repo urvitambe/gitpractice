@@ -1,0 +1,31 @@
+Ansible Basics
+Ansible is an IT automation tool that provides continuous deployment capabilities and zero downtime rolling updates. It’s simplicity, agentless features, and scalability is what makes it stand out. In this post, let’s discuss some common terms used in Ansible to get a better grasp of this tool.
+
+Playbooks
+Developed in basic text language, Playbooks are human readable and form the basis of the configuration, deployment and orchestration language of Ansible. Some interesting functionalities of playbooks are:
+
+Describe policies for remote systems.
+
+Manage configurations and deployments of remote systems.
+
+Zero downtime rolling updates.
+
+Interact with monitoring servers and load balancers.
+
+Modules
+Ansible provides a module library or user-defined module that controls system resources. All modules support arguments, and most of them accept the key = value form. Data returned from modules are typically in the JSON format. Modules are idempotent, which means a change is made to the system only when the need arises.
+
+A wide variety of modules are supported by the Ansible module library. A few of them include cloud, files, database, network, notification, packaging, system and web infrastructure modules.
+
+Roles
+Roles help improve the organization of playbooks. These are nothing more than automation using the include directives. They are redistributable units which enables sharing of roles among playbooks.
+
+Patterns
+Patterns control host management and help decide which hosts to communicate to and the configuration setup that needs to be applied to hosts. Patterns can be used in a variety of ways, including the targeting of all hosts, specific host, host by name, specific groups, and so on.
+
+Facts
+Facts are automatically discovered information about remote nodes. This is achieved while running plays and executing the internal setup modules. Some example facts include: memory on all hosts, facts from Chef, and Puppet’s fact libraries (Ohai and Facter), etc.
+
+Ansible Galaxy
+Ansible Galaxy refers to the free online community to download, view and rate Ansible roles. (https://galaxy.ansible.com/)
+
